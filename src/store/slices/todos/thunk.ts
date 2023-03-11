@@ -8,7 +8,7 @@ export const getTodos = () => {
     return async(dispatch:any, getState:any)=>{
 
         try {
-            const {data} = await todoApi('/sss');
+            const {data} = await todoApi('');
             dispatch(setTodos({todos: data}))
         } catch (error) {
             console.log(error)
