@@ -70,9 +70,16 @@ const TodoForm = () => {
                         )
                     }
                     <button className={!todoActive ?'todo-button' : 'todo-button-active'} type="submit">
-                        {todoActive ? "Editing to do" : "Add To do"}
+                        {todoActive ? "Confirm" : "Add To do"}
                     </button>
                 </div>
+                {
+                    !todoActive && (
+                        <div className='p-container'>
+                            <p>¡ Click on any task to edit !</p>
+                        </div>
+                    )
+                }
 
 
             </form>

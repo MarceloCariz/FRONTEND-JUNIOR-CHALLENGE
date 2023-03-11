@@ -44,7 +44,8 @@ export const updateCheckedTodo = (id: number, checked: boolean) => {
     return async(dispatch:any, getState:any)=>{
 
         try {
-            await todoApi.patch(`/${id}`);
+            checked = !checked;
+            await todoApi.patch(`/${id}`, {checked});
             dispatch(changeCheckedTodo({id, checked}))
             dispatch(refreshDoneTasks());   
             toastSuccess(checked ? "Correctly unchecked" : "Correctly checked");

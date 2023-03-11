@@ -20,7 +20,6 @@ const TodoListItem = ({ onCheck, checked, onDelete, label , id, position,activeT
       aria-checked
       className="todo-list-item-content"
     >
-      <div></div>
       <input
         tabIndex={-1}
         type="checkbox"
@@ -30,7 +29,6 @@ const TodoListItem = ({ onCheck, checked, onDelete, label , id, position,activeT
       <span onClick={() => activeTodo(id)} className={checked ? "todo-list-item-checked" : ""}>
         {label}
       </span>
-      <div></div>
     </div>
     <button type="button" className="todo-list-item-delete" onClick={() => onDelete(id)}>
       x

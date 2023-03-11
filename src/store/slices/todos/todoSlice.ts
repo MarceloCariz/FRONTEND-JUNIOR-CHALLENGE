@@ -31,7 +31,7 @@ export const todoSlice = createSlice({
         changeCheckedTodo: (state, action) => {
             state.todos = state.todos.map((todo) => {
                 if(todo.id !== action.payload.id) return todo;
-                todo.checked = !action.payload.checked;
+                todo.checked = action.payload.checked;
                 return todo
             });
 
