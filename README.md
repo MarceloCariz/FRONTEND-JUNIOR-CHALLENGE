@@ -1,9 +1,6 @@
 # REACT TO-DO LIST APP 
 
-This is an app developed with React-Typescript that allows to the user get the tasks that he ```make's``` also add a new one,  
-```check``` it, ```delete``` it or ```edit``` the ```description's task```. 
-The structure of this app allow to get the data in comunication with 
-an API rest and save, manage the data with ```Redux Toolkit```.
+This is an app developed with React-Typescript that allows to the user get the tasks that he ```make's``` also add a new one,  ```check``` it, ```delete``` it or ```edit``` the ```description's task```. The structure of this app allow to get the data in comunication with an API rest and save, manage the data with ```Redux Toolkit```.
 
 ## HOW TO INSTALL AND RUN THE PROJECT
 
