@@ -48,7 +48,7 @@ export const updateCheckedTodo = (id: number, checked: boolean) => {
             await todoApi.patch(`/${id}`, {checked});
             dispatch(changeCheckedTodo({id, checked}))
             dispatch(refreshDoneTasks());   
-            toastSuccess(checked ? "Correctly unchecked" : "Correctly checked");
+            toastSuccess(checked ? "Correctly checked" : "Correctly unchecked");
         } catch (error) {
             console.log(error)
             toastError('Error in editing the task')
